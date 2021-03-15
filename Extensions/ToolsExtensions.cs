@@ -2,14 +2,16 @@
 
 // using UnityEditor;
 // using UnityEngine;
-using UnityEngine.UI;
+
+using UnityEngine;
+// using UnityEngine.UI;
 // need use DoTween
 // using DG.Tweening;
 // using DG.Tweening.Core;
 // using DG.Tweening.Plugins.Options;
 
-namespace Extensions
-{
+// namespace Extensions
+// {
     public static class ToolsExtensions
     {
 //         public static float GameScreenWidth
@@ -79,13 +81,16 @@ namespace Extensions
 //             var scale = canvasRect.sizeDelta;
 //             return Vector3.Scale(centerBasedViewPortPosition, scale);
 //         }
-
-        public static void SetAlpha(this Graphic graphic, float alpha)
+        public static void WorldTo()
         {
-            var c = graphic.color;
-            c.a = alpha;
-            graphic.color = c;
+            Debug.Log($"d");
         }
+        // public static void SetAlpha(this Graphic graphic, float alpha)
+        // {
+        //     var c = graphic.color;
+        //     c.a = alpha;
+        //     graphic.color = c;
+        // }
 
 // need use DoTween
         //
@@ -125,4 +130,4 @@ namespace Extensions
         // }
 
     }
-}
+// }
