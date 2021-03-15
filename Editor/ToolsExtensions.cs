@@ -4,9 +4,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 // need use DoTween
-using DG.Tweening;
-using DG.Tweening.Core;
-using DG.Tweening.Plugins.Options;
+// using DG.Tweening;
+// using DG.Tweening.Core;
+// using DG.Tweening.Plugins.Options;
 
 namespace Extensions
 {
@@ -88,41 +88,41 @@ namespace Extensions
         }
 
 // need use DoTween
-
-        public static TweenerCore<Color, Color, ColorOptions> AlphaOut(this Graphic target, float duration,
-            float toAlpha)
-        {
-            return ChangeAlpha(target, 1, toAlpha, duration);
-        }
-
-        public static TweenerCore<Color, Color, ColorOptions> AlphaOut(this Graphic target, float duration)
-        {
-            return ChangeAlpha(target, 1, 0, duration);
-        }
-
-        public static TweenerCore<Color, Color, ColorOptions> AlphaIn(this Graphic target, float duration)
-        {
-            return ChangeAlpha(target, 0, 1, duration);
-        }
-
-        public static TweenerCore<Color, Color, ColorOptions> AlphaIn(this Graphic target, float duration,
-            float toAlpha)
-        {
-            return ChangeAlpha(target, 0, toAlpha, duration);
-        }
-
-        public static TweenerCore<Color, Color, ColorOptions> ChangeAlpha(this Graphic target, float startValue,
-            float endValue, float duration)
-        {
-            Color startColor = target.color;
-            startColor.a = startValue;
-
-            Color endColor = target.color;
-            endColor.a = endValue;
-
-            target.color = startColor;
-            return target.DOColor(endColor, duration);
-        }
+        //
+        // public static TweenerCore<Color, Color, ColorOptions> AlphaOut(this Graphic target, float duration,
+        //     float toAlpha)
+        // {
+        //     return ChangeAlpha(target, 1, toAlpha, duration);
+        // }
+        //
+        // public static TweenerCore<Color, Color, ColorOptions> AlphaOut(this Graphic target, float duration)
+        // {
+        //     return ChangeAlpha(target, 1, 0, duration);
+        // }
+        //
+        // public static TweenerCore<Color, Color, ColorOptions> AlphaIn(this Graphic target, float duration)
+        // {
+        //     return ChangeAlpha(target, 0, 1, duration);
+        // }
+        //
+        // public static TweenerCore<Color, Color, ColorOptions> AlphaIn(this Graphic target, float duration,
+        //     float toAlpha)
+        // {
+        //     return ChangeAlpha(target, 0, toAlpha, duration);
+        // }
+        //
+        // public static TweenerCore<Color, Color, ColorOptions> ChangeAlpha(this Graphic target, float startValue,
+        //     float endValue, float duration)
+        // {
+        //     Color startColor = target.color;
+        //     startColor.a = startValue;
+        //
+        //     Color endColor = target.color;
+        //     endColor.a = endValue;
+        //
+        //     target.color = startColor;
+        //     return target.DOColor(endColor, duration);
+        // }
 
     }
 }
