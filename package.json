@@ -1,0 +1,17 @@
+{
+  "name": "com.unity.UnityTools",
+  "version": "1.0.0",
+  "displayName": "UnityTools",
+  "description": "small tools for Unity ",
+  "unity": "2019.4",
+  "unityRelease": "0b5",
+  "keywords": [
+    "UnityTools"
+  ],
+  "author": {
+    "name": "Serhii",
+    "email": "vpfonya@gmail.com",
+    "url": "https://www.unity3d.com"
+  },
+  "type": "module"
+}
